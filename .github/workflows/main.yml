@@ -12,7 +12,7 @@ jobs:
               run: mkdir -p .output
 
             - name: Compress files
-              run: zip .output/pack.zip ./*
+              run: zip -r .output/pack.zip ./*
 
             - name: Hash zip
               run: sha1sum .output/pack.zip > .output/hash.txt
