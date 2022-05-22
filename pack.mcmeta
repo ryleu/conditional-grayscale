@@ -1,0 +1,43 @@
+{
+    "language": {
+        "en_us": {
+            "region": "US",
+            "name": "English",
+            "bidirectional": false
+        },
+        "en_ud": {
+            "region": "u\u028do\u15e1 \u01ddp\u1d09sd\u2229",
+            "name": "\u0265s\u1d09\ua781\u1d77u\u018e",
+            "bidirectional": false
+        },
+        "en_au": {
+            "region": "Australia",
+            "name": "English",
+            "bidirectional": false
+        },
+        "en_ca": {
+            "region": "Canada",
+            "name": "English",
+            "bidirectional": false
+        },
+        "en_nz": {
+            "region": "New Zealand",
+            "name": "English",
+            "bidirectional": false
+        },
+        "en_gb": {
+            "region": "United Kingdom",
+            "name": "English",
+            "bidirectional": false
+        },
+        "en_pt": {
+            "region": "The Seven Seas",
+            "name": "Pirate Speak",
+            "bidirectional": false
+        }
+    },
+    "pack": {
+        "description": "Required resource pack for IDPVP",
+        "pack_format": 8
+    }
+}
