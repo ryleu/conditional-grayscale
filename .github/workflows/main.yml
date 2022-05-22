@@ -1,0 +1,26 @@
+name: Zip and upload
+on:
+    push:
+        branches: [main]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Create directory
+              run: mkdir -p .output
+
+            - name: Compress files
+              run: zip .output/pack.zip ./*
+
+            - name: Hash zip
+              run: sha1sum .output/pack.zip > .output/hash
+
+            - name: Deploy
+              uses: peaceiris/actions-gh-pages@v3
+              with:
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+                publish_dir: ./.output
+                keep_files: false
+                full_commit_message: update pack
