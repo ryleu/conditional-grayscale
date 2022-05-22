@@ -15,7 +15,7 @@ jobs:
               run: zip .output/pack.zip ./*
 
             - name: Hash zip
-              run: sha1sum .output/pack.zip > .output/hash
+              run: sha1sum .output/pack.zip > .output/hash.txt
 
             - name: Deploy
               uses: peaceiris/actions-gh-pages@v3
